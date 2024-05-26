@@ -38,8 +38,6 @@ a {
   background-image: url(assets/photos/welcome-bg.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-x: 0px;
-  background-position-y: -410px;
 }
 
 #sectoin-1-filter {
@@ -71,9 +69,7 @@ a {
   text-align: center;
   font-family: sans-serif;
   font-size: 72px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 4.6px;
   margin-bottom: 24px;
 }
@@ -83,9 +79,7 @@ a {
   text-align: center;
   font-family: sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: 1.2px;
 }
 
@@ -93,9 +87,7 @@ a {
   color: #fff;
   font-family: sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: 1.9px;
 }
 
@@ -117,7 +109,7 @@ a {
   justify-content: flex-start;
   align-items: flex-end;
 
-  gap: 58px;
+  gap: 40px;
   margin-left: 75px;
 }
 
@@ -166,7 +158,6 @@ a {
   color: rgba(255, 255, 255, 0.44);
   font-family: sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 35px;
   letter-spacing: 1.1px;
@@ -181,15 +172,16 @@ a {
 }
 
 .we-are-wrapper {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex: 1;
+  width: 100%;
 }
 
 .we-are-content {
   position: relative;
   display: flex;
+  justify-content: space-between;
 
   width: 1182px;
   height: 559px;
@@ -202,7 +194,7 @@ a {
   flex-direction: column;
   justify-content: center;
 
-  width: 590px;
+  width: 500px;
   height: 410px;
 
   background-image: url(./assets/photos/looking-man.png);
@@ -214,7 +206,6 @@ a {
   color: #333;
   font-family: sans-serif;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   letter-spacing: 2.3px;
   margin-bottom: 10px;
@@ -224,7 +215,6 @@ a {
   color: #504e4e;
   font-family: sans-serif;
   font-size: 42px;
-  font-style: normal;
   font-weight: 300;
   letter-spacing: 2.6px;
   margin-bottom: 32px;
@@ -235,7 +225,6 @@ a {
   color: #5b5858;
   font-family: sans-serif;
   font-size: 15px;
-  font-style: normal;
   font-weight: 300;
   line-height: 25px;
   letter-spacing: 1.2px;
@@ -256,6 +245,18 @@ a {
   position: absolute;
   top: 12px;
   left: -30px;
+}
+
+.we-are-right-text {
+  position: relative;
+  width: 311px;
+  height: 559px;
+}
+
+.we-are-right-text > .we-are-text {
+  position: absolute;
+  bottom: 80px;
+  right: 10px;
 }
 
 .green-box {
@@ -285,7 +286,7 @@ a {
 .frame-2 p {
   position: absolute;
   top: 243px;
-  left: 288px;
+  right: 0;
   margin: 0;
 }
 
@@ -303,7 +304,6 @@ a {
   color: #252525;
   font-family: sans-serif;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   letter-spacing: 3px;
   margin-bottom: 7px;
@@ -362,9 +362,7 @@ a {
   color: #252525;
   font-family: sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 
@@ -375,9 +373,7 @@ a {
   color: #252525;
   font-family: sans-serif;
   font-size: 10px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
   opacity: 0.5;
@@ -387,9 +383,8 @@ a {
   color: #777;
   font-family: sans-serif;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 25px; /* 208.333% */
+  line-height: 25px;
   letter-spacing: 1px;
 
   margin-top: 19px;
@@ -411,28 +406,28 @@ a {
 }
 
 #section-4 {
-  height: 180vh;
+  height: 1652px;
 }
 
 .latest-works-wrapper {
   display: flex;
   flex: 1;
   justify-content: center;
-  position: relative;
+  width: 100%;
 }
 
-.latest-works-header {
+.latest-works-widget {
   display: flex;
-  flex: 0.5;
-
-  margin-top: 159px;
+  flex-direction: column;
+  width: 1185px;
+  margin-top: 50px;
+  position: relative;
 }
 
 .latest-works-title {
   color: #252525;
   font-family: Oswald;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   letter-spacing: 3px;
 }
@@ -451,9 +446,7 @@ a {
   color: #252525;
   font-family: Open Sans;
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: 0.8px;
   opacity: 0.3;
 }
@@ -462,61 +455,76 @@ a {
   opacity: 1;
 }
 
-.block-1 {
+.photography-block {
   position: absolute;
-  top: 83px;
-  left: 1095px;
+  top: 0;
+  right: 0;
+}
 
+.kitten-block {
+  position: absolute;
+  top: 250px;
+  left: 0;
+}
+
+.mac-block {
+  position: absolute;
+  top: 650px;
+  right: 0;
+}
+
+.notebook-block {
+  position: absolute;
+  top: 900px;
+  left: 0;
+}
+
+.right-block {
   width: 584px;
   height: 556px;
 
-  background-image: url(./assets/photos/photocam.png);
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: end;
   flex-direction: column;
 }
 
-.block-1 h2 {
+.right-block h2 {
   color: #252525;
   font-family: Oswald;
   font-size: 48px;
-  font-style: normal;
   font-weight: 300;
   letter-spacing: 3px;
-
   width: 295px;
-  margin-bottom: 65px;
-
-  display: flex;
-  justify-content: start;
 }
 
-.block-header {
-  width: 100%;
+.right-block-header {
+  position: absolute;
+  left: 0;
+  bottom: 150px;
 }
 
-.block-title h2 {
+.right-block-content {
+  margin-right: 125px;
+  margin-top: 24px;
+}
+
+.right-block-title h3 {
   color: #252525;
   text-align: right;
   font-family: Open Sans;
   font-size: 18px;
-  font-style: normal;
   font-weight: 300;
   letter-spacing: 1.1px;
 }
 
-.block-description p {
+.right-block-description p {
   color: #c2c2c2;
   text-align: right;
   font-family: Open Sans;
   font-size: 13px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 23px; /* 176.923% */
+  line-height: 23px;
   letter-spacing: 0.8px;
 
   width: 303px;
@@ -525,35 +533,27 @@ a {
   margin-top: 17px;
 }
 
-.block-2 {
-  position: absolute;
-  top: 439px;
-  left: 476px;
-
+.left-block {
   width: 583px;
   height: 596px;
 
-  background-image: url(./assets/photos/cat.png);
-  background-repeat: no-repeat;
-
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
 }
 
-.block-header-v2 {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+.left-block-header {
+  position: absolute;
+  right: 0;
+  bottom: 150px;
 }
 
-.block-header-v2 h2 {
+.left-block-header h2 {
   position: relative;
   color: #252525;
   font-family: Oswald;
   font-size: 48px;
-  font-style: normal;
   font-weight: 300;
   letter-spacing: 3px;
 
@@ -587,7 +587,6 @@ a {
   color: #252525;
   font-family: Open Sans;
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: 0.8px;
 
@@ -599,29 +598,27 @@ a {
   text-decoration-thickness: 3px;
 }
 
-.block-title-v2 {
+.left-block-title {
   width: 80%;
 }
 
-.block-title-v2 h2 {
+.left-block-title h3 {
   color: #252525;
   text-align: right;
   font-family: Open Sans;
   font-size: 18px;
-  font-style: normal;
   font-weight: 300;
   letter-spacing: 1.1px;
   text-align: center;
 }
 
-.block-description-v2 p {
+.left-block-description p {
   color: #c2c2c2;
   text-align: right;
   font-family: Open Sans;
   font-size: 13px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 23px; /* 176.923% */
+  line-height: 23px;
   letter-spacing: 0.8px;
 
   width: 303px;
@@ -633,76 +630,34 @@ a {
   width: 336px;
 }
 
-.block-content-v2 {
+.left-block-content {
+  margin-top: 24px;
+
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.block-content-v4 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.block-description-v2 {
+.left-block-description {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-left: 53px;
 }
 
-.block-3 {
-  position: absolute;
-  top: 809px;
-  left: 1095px;
-
-  width: 584px;
-  height: 556px;
-
-  background-image: url(./assets/photos/comuter.png);
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-}
-
-.block-3 h2 {
-  color: #252525;
-  font-family: Oswald;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: 3px;
-
+.mac-block .right-block-header h2 {
   width: 405px;
-  margin-bottom: 65px;
-
-  display: flex;
-  justify-content: start;
 }
 
-.block-4 {
+.notebook-block .left-block-header h2 {
+  width: 240px;
+}
+
+.latest-works-more {
   position: absolute;
-  top: 1175px;
-  left: 476px;
-
-  width: 583px;
-  height: 596px;
-
-  background-image: url(./assets/photos/notebook.png);
-  background-repeat: no-repeat;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
+  bottom: 50px;
+  right: 0;
 }
 
 .latest-works-more a {
@@ -710,17 +665,8 @@ a {
   text-align: right;
   font-family: Oswald;
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: 2px;
-}
-
-.latest-works-more {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-
-  margin-bottom: 15px;
 }
 
 .team-card {
@@ -765,7 +711,6 @@ a {
   color: #252525;
   font-family: Oswald;
   font-size: 18px;
-  font-style: normal;
   font-weight: 300;
   letter-spacing: 1.1px;
 }
@@ -802,7 +747,6 @@ a {
   text-align: center;
   font-family: Open Sans;
   font-size: 14px;
-  font-style: normal;
   font-weight: 300;
   line-height: 31px; /* 221.429% */
   letter-spacing: 0.8px;
@@ -829,7 +773,6 @@ a {
   text-align: center;
   font-family: Oswald;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: 1.1px;
 }
@@ -838,9 +781,7 @@ a {
   color: #b8b8b8;
   font-family: Oswald;
   font-size: 14px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
   letter-spacing: 0.8px;
 }
 
@@ -848,7 +789,6 @@ a {
   color: #b8b8b8;
   font-family: Oswald;
   font-size: 18px;
-  font-style: normal;
   font-weight: 300;
   letter-spacing: 1.1px;
 }
@@ -922,7 +862,6 @@ a {
   text-align: center;
   font-family: Oswald;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: 2.6px;
 }
@@ -932,7 +871,6 @@ a {
   text-align: center;
   font-family: Open Sans;
   font-size: 14px;
-  font-style: normal;
   font-weight: 300;
   letter-spacing: 1.5px;
 
@@ -959,7 +897,6 @@ a {
   text-align: center;
   font-family: Oswald;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: 2.6px;
 }
@@ -969,7 +906,6 @@ a {
   text-align: center;
   font-family: Open Sans;
   font-size: 14px;
-  font-style: normal;
   font-weight: 300;
   letter-spacing: 1.5px;
 
@@ -1012,7 +948,6 @@ a {
   color: #fff;
   font-family: Oswald;
   font-size: 13px;
-  font-style: normal;
   font-weight: 300;
   letter-spacing: 0.8px;
 
